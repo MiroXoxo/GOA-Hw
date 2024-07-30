@@ -10,7 +10,7 @@ def quadList(list):
 print(quadList(listOfNumbers))
 print()
 
-# 14. შექმენით ფუნქცია, რომელიც 
+# 14)შექმენით ფუნქცია, რომელიც 
 # იღებს string's და აბრუნებს მის შებრუნებულს.
 string1="todria"
 string2="miro"
@@ -23,7 +23,7 @@ print(reverseAString(string1))
 print(reverseAString(string2))
 print()
 
-# 15. შექმენით ფუნქცია, რომელიც იღებს რაიმე integer'ს და 
+# 15)შექმენით ფუნქცია, რომელიც იღებს რაიმე integer'ს და 
 # თუ ლუწია აბრუნებს True'ს, თუ კენტი False'ს.
 integer1=6
 integer2=3
@@ -34,7 +34,7 @@ print(evenInt(integer1),end=" ")
 print(evenInt(integer2),end=" ")
 print(evenInt(integer3))
 print()
-
+#16)შექმენით ფუნქცია, რომელიც იღებს string'ების სიას და აბრუნებს ყველაზე გრძელ string'ს.
 listStrings1=["Cash","Post","Office","Fire","Department","Meet","Sea","Maple"]
 listStrings2=["A","B","C","D","E","FG","H","IJ"]
 def maxLenString(list):

@@ -1,4 +1,4 @@
-#7) შექმენით ფუნქცია, რომელიც იღებს რიცხვს და აბრუნებს მის factorial'ს
+#7)შექმენით ფუნქცია, რომელიც იღებს რიცხვს და აბრუნებს მის factorial'ს
 def factorial(int):
     factorial=1
     for i in range(1,int+1):
@@ -6,7 +6,7 @@ def factorial(int):
     return factorial
 print(factorial(5))
 print()
-#8) შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს 
+#8)შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს 
 # და აბრუნებს ორივე list'იდან მაქსიმალური რიცხვების ჯამს.
 listOfNumbers1=[1,3,7,4]
 listOfNumbers2=[4,15,3,7]
@@ -19,7 +19,7 @@ def sumListMaxNumbers(list1,list2):
 print(sumListMaxNumbers(listOfNumbers1,listOfNumbers2))
 print()
 
-#9) შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს ორივე list'იდან მინიმალური რიცხვების სხვაობას.
+#9)შექმენით ფუნქცია, რომელიც იღებს 2 integer'ების list'ს და აბრუნებს ორივე list'იდან მინიმალური რიცხვების სხვაობას.
 listOfNumbers1=[1,3,7,4]
 listOfNumbers2=[4,15,3,7]
 def subListMinNumbers(list1,list2):
@@ -31,7 +31,7 @@ def subListMinNumbers(list1,list2):
 print(subListMinNumbers(listOfNumbers1,listOfNumbers2))
 print()
 
-#10) შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ამ სიაში მაქსიმალური და მინიმალური რიცხვების სხვაობას.
+#10)შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ამ სიაში მაქსიმალური და მინიმალური რიცხვების სხვაობას.
 listOfNumbers1=[1,3,7,4]
 listOfNumbers2=[4,15,3,7]
 def subMaxMinNumbers(list1,list2):
@@ -43,14 +43,14 @@ def subMaxMinNumbers(list1,list2):
 print(subMaxMinNumbers(listOfNumbers1,listOfNumbers2))
 print()
 
-#11) შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ყველა ელემენტის ჯამს.
+#11)შექმენით ფუნქცია, რომელიც იღებს integer'ების list'ს და აბრუნებს ყველა ელემენტის ჯამს.
 listOfNumbers=[1,3,18,7,4,10,0]
 def sumList(list):
     return sum(list)
 print(sumList(listOfNumbers))
 print()
 
-#12) შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს ხმოვანი ასოების რაოდენობას string'ში.
+#12)შექმენით ფუნქცია, რომელიც იღებს string'ს და აბრუნებს ხმოვანი ასოების რაოდენობას string'ში.
 string1="miro"
 string2="likely"
 string3="suspicious"

@@ -1,4 +1,4 @@
-#17) შექმენით ფუნქცია, რომელიც იღებს მთელი რიცხვების სიას და 
+#17)შექმენით ფუნქცია, რომელიც იღებს მთელი რიცხვების სიას და 
 # აბრუნებს სიაში ყველაზე მცირე რიცხვს.
 listNumbers=[4,-6,1,9,19,-32,-8]
 def minNumberList(list):
@@ -7,7 +7,7 @@ def minNumberList(list):
 print(minNumberList(listNumbers))
 print()
 
-#18) შექმენით ფუნქცია, რომელიც იღებს ორ integer'ს და 
+#18)შექმენით ფუნქცია, რომელიც იღებს ორ integer'ს და 
 # აბრუნებს მათ უდიდეს საერთო გამყოფს (GCD-Greatest common divisor).
 integerA=24
 integerB=60
@@ -23,7 +23,7 @@ def gcdIntegers(integer1,integer2):
 print(gcdIntegers(integerA,integerB))
 print()
 
-# 19. შექმენით ფუნქცია, რომელიც იღებს string'ს და 
+# 19)შექმენით ფუნქცია, რომელიც იღებს string'ს და 
 # აბრუნებს იმავე string'ს uppercase'ში.
 # (მაგალითად: input: "Hello World". output: "HELLO WORLD".
 string1="Welcome To Europe"
@@ -32,7 +32,7 @@ def upperString(string):
 print(upperString(string1))
 print()
 
-# 20. შექმენით ფუნქცია, რომელიც იღებს integer'ების სიას და 
+# 20)შექმენით ფუნქცია, რომელიც იღებს integer'ების სიას და 
 # აბრუნებს მათ საშუალო არითმეტიკულს.
 # (მაგალითად: input: [1, 5, 12]. output: (1 + 5 + 12)/3, ანუ 6.) 
 # (ელემენტების დასათვლელად გამოიყენეთ ფუნქცია len).
