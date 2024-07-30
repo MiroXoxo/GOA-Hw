@@ -5,7 +5,8 @@
 numbers=[4,8,-9,16,1]
 def calculateAverage(listNumbers):
     avrg=str(sum(listNumbers)/len(listNumbers))
-    while avrg[-1]=="0" or avrg[-1]==".":avrg=avrg[:-1]
+    while avrg[-1]=="0" or avrg[-1]==".":
+        avrg=avrg[:-1]
     return avrg
 print(calculateAverage(numbers))
 print()
