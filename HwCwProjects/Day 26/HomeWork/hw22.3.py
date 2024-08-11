@@ -47,5 +47,5 @@ dictionary={"a": 1, "b": 2}
 i=0
 while i<len(dictionary):
     print(list(dictionary)[i],end=" ")
-    print((dictionary)[0])
+    print(dictionary[list(dictionary)[i]],end=" ")
     i+=1
