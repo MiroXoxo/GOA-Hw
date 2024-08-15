@@ -1,0 +1,15 @@
+# 3) იმუშავეთ split-ის გამოყენებაზე: შექმენით 10 string და 
+# თითოეულზე გამოიყენეთ split ბრძანება, მოახდინეთ გახლეჩვა ნებისმიერი სიმბოლოთი
+def splitWithM(string):
+    string=string.split("a")
+    return string
+print(splitWithM("Laugh"))
+print(splitWithM("Miro"))
+print(splitWithM("Mariam"))
+print(splitWithM("Look"))
+print(splitWithM("Milk"))
+print(splitWithM("Mamonth"))
+print(splitWithM("Money"))
+print(splitWithM("Easy"))
+print(splitWithM("Difficult"))
+print(splitWithM("Dream"))
