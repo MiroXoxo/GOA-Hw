@@ -1,0 +1,49 @@
+ nav button{
+    border: solid 4px #b29512;
+    font-size:25px;
+    padding:5px;
+    border-radius: 13px;
+ }
+ nav a{
+    margin: 2px;
+ }
+ nav{
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ header{
+    padding-left: 12px;
+    padding-right: 12px;
+    nav-right:px;
+    font-size: 35px;
+    background-color: whitesmoke;
+    width: 22%;
+    border: solid 5px #b29512;
+ }
+ .social-icons{
+    width: 8%;
+    text-align: center;
+    font-size: 70px;
+    background-color: white;
+    border: solid 4px #b29512; 
+}
+.home-content{
+    font-size: 20px;
+    background-color: whitesmoke;
+    width:15%;
+    padding-left: 20px;
+    border: solid 4px #b29512;
+    margin-bottom: 10px;
+    
+}
+.typing-text{
+    font-size: 25px;
+}
+body{
+    background-color: #698FCC;
+}
+div img{
+border: solid 4px #b29512;
+margin-bottom: 10px;
+}
+ 
