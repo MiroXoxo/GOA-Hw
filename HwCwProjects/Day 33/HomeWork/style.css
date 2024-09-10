@@ -1,27 +1,32 @@
  nav button{
-    border: solid 4px #b29512;
-    font-size:25px;
+    border: solid 3px #b29512;
+    font-size:20px;
     padding:5px;
     border-radius: 13px;
  }
  nav a{
     margin: 2px;
+    justify-content: space-around;
+    padding-right: 17px;
+    
  }
  nav{
     margin-top: 10px;
     margin-bottom: 10px;
+    
  }
  header{
+    width:  35%;
     padding-left: 12px;
     padding-right: 12px;
-    nav-right:px;
-    font-size: 35px;
+    font-size: 23px;
     background-color: whitesmoke;
-    width: 22%;
+   
     border: solid 5px #b29512;
+    text-align: center;
  }
  .social-icons{
-    width: 8%;
+    width: 12%;
     text-align: center;
     font-size: 70px;
     background-color: white;
@@ -30,14 +35,15 @@
 .home-content{
     font-size: 20px;
     background-color: whitesmoke;
-    width:15%;
+    width:29%;
+    justify-content: space-around;
     padding-left: 20px;
     border: solid 4px #b29512;
     margin-bottom: 10px;
     
 }
 .typing-text{
-    font-size: 25px;
+    font-size:20px;
 }
 body{
     background-color: #698FCC;
@@ -45,5 +51,19 @@ body{
 div img{
 border: solid 4px #b29512;
 margin-bottom: 10px;
+width:20%;
 }
- 
+h3 ul1 li{
+   display:inline-block;
+   padding-left: 35px;
+   }
+   .home-content1{
+      font-size: 20px;
+      background-color: whitesmoke;
+      width:30%;
+      justify-content: space-around;
+      padding-left: 20px;
+      border: solid 4px #b29512;
+      margin-bottom: 10px;
+      
+  }
