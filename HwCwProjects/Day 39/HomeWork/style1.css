@@ -1,0 +1,45 @@
+*{
+    padding-right: 10%;
+}
+p:nth-child(1){
+    text-decoration: dotted underline green;
+    text-align: right;
+}
+p:nth-child(2){
+    text-decoration: line-through;
+    text-align: center;
+}
+p:nth-child(3){
+    text-align: left;
+    text-decoration: double overline red;
+}
+p:nth-child(4){
+    text-align: center;
+    text-decoration: underline;
+}
+p:nth-child(5){
+    text-align: right;
+    text-decoration: line-through green;
+}
+p:nth-child(6){
+    text-align: left;
+    text-decoration: line-through;
+}
+p:nth-child(7){
+    text-align: left;
+    text-decoration: overline;
+}
+p:nth-child(8){
+    text-align: right;
+    text-decoration:overline green;
+    color: green;
+}
+p:nth-child(9){
+    text-align: center;
+    color: gray;
+    text-decoration: overline gray;
+}
+p:nth-child(10){
+    text-align: right;
+    text-decoration: dotted underline green;
+}
