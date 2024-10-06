@@ -1,0 +1,33 @@
+*{
+    font-family: sans-serif;
+    
+}
+body{
+    background-color: bisque;
+}
+th{
+    color: white;
+}
+td{
+     
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+th{background-color:tomato;
+}
+table{
+    height:200px;
+    border-collapse:collapse;
+}
+tr:nth-child(odd){
+background-color:rgb(241, 238, 238);
+}
+tr:nth-child(even){
+    background-color:white;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
