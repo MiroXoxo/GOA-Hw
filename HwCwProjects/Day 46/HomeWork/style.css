@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:serif;
+}
+body{
+    background-color: antiquewhite;
+}
+.main-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 125px;
+}
+.main-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-top: 0px;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+.wrapper:hover {
+    filter: brightness(0.8) saturate(1.2);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5px;
+}
+.add-ons{
+    height:100%;
+    width: 100%;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.color-effect{
+    height:100%;
+    width: 100%;
+    position:absolute;
+    border-radius: 20px;
+    opacity: 0.4;
+}
+.main-bottom .wrapper:nth-child(odd) .color-effect{
+    background-color: brown;
+}
+.main-bottom .wrapper:nth-child(even) .color-effect{
+    background-color:rgb(47, 47, 177);   
+}
+.main-top .wrapper:nth-child(even) .color-effect{
+    background-color: brown;
+}
+.main-top .wrapper:nth-child(odd) .color-effect{
+    background-color:rgb(47, 47, 177);
+}
+
+
+h,p{
+    color: white;
+}
+h{
+    font-size: 50px;
+    font-weight: bolder;
+}
+ 
+ 
