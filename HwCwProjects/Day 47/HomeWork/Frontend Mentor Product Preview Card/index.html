@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+ 
+  <style>
+    body{
+      background-color: hsl(30, 38%, 92%);
+    }
+    p{font-size: 14px;}
+    .main{
+      display: flex;
+      width: 1440px;
+      justify-content: center;
+      align-items: center;
+      margin-top:70px;
+    }
+    .info{
+      background-color:hsl(0, 0%, 100%);
+      padding: 50px;
+      height: 425px;
+      width: 250px;
+    }
+    img{
+      width:350px;
+    }
+    .price{
+      display: flex;
+    }
+    button{
+      width:100%;
+      font-weight: 700;
+      font-size: large;
+      margin-top:15px;
+      padding: 18px;
+      border-radius: 10px;
+      border: none;
+      font-family:Montserrat;
+      font-weight:500; 
+      color:hsl(0, 0%, 100%);
+      background-color:hsl(158, 36%, 37%);
+    }
+    button:hover{
+      background-color: hsl(158, 36%, 47%); 
+      transform: scale(1.05);
+    }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="main">
+      <img src="image-product-desktop.jpg" alt="product">
+        <div class="info">
+          <h2 style="margin: 0px; color:hsl(228, 12%, 48%);letter-spacing:5px ;font-size: 10px;font-family:Montserrat ; ">PERFUME</h2>
+
+          <h1 style="color:hsl(212, 21%, 14%)">Gabrielle<br>Essence Eau<br>De Parfum</h1>
+
+          <p style="line-height:25px; font-family: Montserrat;font-weight: 500; color:hsl(228, 12%, 48%)">A floral, solar and voluptuous interpretation composed by<br> Olivier Polge, 
+          Perfumer-Creator<br> for the House of CHANEL.</p>
+          <div class="price">
+            <h1 style="font-family:Fraunces; font-weight: 1000; color:hsl(158, 36%, 37%)">$149.99</h1>
+            <h2 style="font-family: sans-serif;font-weight:500;font-size: smaller; align-self: center; padding-left: 18px;text-decoration: line-through; color:hsl(228, 12%, 48%)">$169.99</h2>
+          </div>
+          <button><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>&nbsp;&nbsp;&nbsp;Add to Cart</button>
+          
+        </div>
+    </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mirian Geradze</a>.
+  </div>
+</body>
+</html>
