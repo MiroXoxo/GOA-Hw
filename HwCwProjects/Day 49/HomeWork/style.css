@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image:url(paper.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 1200px;
+}
+.wrapper{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+img{
+    width: 100%;;
+}
+.add-ons{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.ad{
+    position: fixed;
+    background-color: darkblue;
+    top: 0px;
+    right:0px
+}
+
+.ad h1{
+    color: yellow;
+}
+.random{
+    background-color: crimson;
+    height: fit-content;
+    width:fit-content;
+    top: 600px;
+    left:600px;
+    position:relative;
+}
+.random h1{
+    color: chartreuse;
+}
