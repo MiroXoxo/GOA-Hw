@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+ 
+  <style>
+    .attribution { font-size: 16px; text-align: center; background-color: hsl(179, 62%, 43%); }
+    .attribution a { color: white; }
+    *{
+      padding: 0px;
+      margin: 0px;
+      font-family: Karla;
+    }
+    html{
+      height: 100%;
+    }
+    body{
+      min-height: 100%;
+      background-color:#E6EFF6;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .wrapper{
+      height: 100%;
+      width: 45%;
+      display: grid;
+      grid-template-columns:1fr 1fr;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .top{
+      grid-column: span 2;
+      background-color: white;
+      padding: 40px;
+      line-height: 30px;
+    }
+    footer{
+      position: sticky;
+      top: 20000px;
+    }
+    .top p{
+      color: hsl(218, 22%, 67%);
+      font-weight: 400;
+    }
+    .top .join{
+      letter-spacing: -1px;
+      padding-bottom:30px ;
+      color:hsl(179, 62%, 43%) ;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    .top .yellow{
+      font-size: 20px;
+      padding-bottom: 10px;
+      color: hsl(71, 73%, 54%);
+      font-weight: 700;
+    }
+    .bottom-left{
+      background-color: hsl(179, 62%, 43%);
+      padding: 40px;
+    }
+    button {
+      transition: box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      width: 100%;
+      padding: 20px;
+      background-color: hsl(71, 73%, 54%);
+      border: none;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    button:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      background-color: hsl(71, 73%, 40%);
+    }
+    .bottom-right{
+      background-color: #5cd1cf;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top">
+      <p class="join">Join our community</p>
+
+      <p class="yellow">30-day, hassle-free money back guarantee</p>
+
+      <p>Gain access to our full library of tutorials along with expert code reviews.<br> 
+      Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+    <div class="bottom-left">
+      <p style="color: white; letter-spacing: -1px;font-weight: 700;font-size: 20px;padding-bottom: 20px;">Monthly Subscription</p>
+      <div style="display: flex; flex-direction: row;">
+      <p style="color: white;font-size: 30px; font-weight: 700;">&dollar;29 <p style="align-self: center; font-size: 16px;font-weight: 400;color:#CDFFFF;opacity: 0.6;">&nbsp;&nbsp; per month</p></p>
+      </div>
+      <p style="padding-top: 10px; padding-bottom: 30px; color: #CDFFFF">Full access for less than &dollar;1 a day</p>
+
+      <button >Sign Up</button>
+    </div>
+    <div class="bottom-right">
+      <p style="color: white;font-size:20px ;font-weight: 700;padding-bottom: 20px;">Why Us</p>
+
+      <p style="line-height: 22px; font-weight: 400;color: #CDFFFF;">Tutorials by industry experts<br>
+      Peer &amp; expert code review<br>
+      Coding exercises<br>
+      Access to our GitHub repos<br>
+      Community forum<br>
+      Flashcard decks<br>
+      New videos every week</p>
+  </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/MiroXoxo">Mirian Geradze</a>.
+    </p>
+  </footer>
+</body>
+</html>
