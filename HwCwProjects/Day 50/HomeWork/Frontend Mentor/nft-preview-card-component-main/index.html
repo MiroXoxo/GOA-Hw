@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      font-family:Outfit;
+    }
+    .attribution { font-size: 11px; text-align: center;color:red;}
+    .attribution a { color: hsl(0, 0%, 100%); }
+    html{
+      height: 100%;
+    }
+    body{
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      flex-direction:column;
+      justify-content: space-between;
+      min-height:100%;
+      align-items: center;
+    }
+    .card{
+      border-radius: 15px;
+      padding: 25px;
+      margin-top: 100px;
+      background-color: hsl(216, 50%, 16%);
+      display: flex;
+      flex-direction: column;
+      width:min-content;
+      height: min-content;
+    }
+    img{
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+    }
+    div p{
+      font-weight:900px;
+      font-size: 18px;
+    }
+    .time-eth{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .top-border{
+      border-top: solid 1px hsl(215, 51%, 70%);
+      opacity: 0.5;
+    }
+    .creator{
+      display: flex;
+      padding-top: 15px;
+    }
+  </style>
+</head>
+<body>
+<div class="card">
+  <img src="./images/imageequilibrium.jpg" alt="Equilibrium"><br>
+  <h1 style="font-size:22px; color:white;">Equilibrium #3429</h1><br>
+
+  <p style="font-weight: 300;font-size: 18px; color: hsl(215, 51%, 70%);">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="time-eth">
+      <p style="font-weight: 500;font-size: 18px; color:hsl(178, 100%, 50%);"><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>&nbsp;&nbsp;0.041 ETH</p>
+      <p style="color: hsl(215, 51%, 70%);"><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>&nbsp;&nbsp;3 days left</p>
+    </div>
+  <div class="top-border">
+  </div>
+    <div class="creator">
+      <img style="border-radius: 100%; border: solid 2px hsl(215, 51%, 70%); width: 30px; height: 30px;" src="./images/image-avatar.png" alt="avatar">
+      <p style="font-weight: 18px; font-size: 18px; color: hsl(215, 51%, 70%);">&nbsp;&nbsp;&nbsp;&nbsp;Creation of <span style="color: white;">&nbsp;Jules Wyvern</span></p></div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/MiroXoxo">Mirian Geradze</a>.
+  </div>
+</body>
+</html>
