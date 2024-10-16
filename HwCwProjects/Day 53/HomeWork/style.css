@@ -1,0 +1,35 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: cadetblue;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    body{
+        background-color: cadetblue;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div{
+        background-color: tomato;
+        font-size: larger;
+        font-weight: 700;
+        font-family: sans-serif;
+        height: 200px;
+        width: 200px;
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5s,border-radius 1s
+        
+    }
+    div:hover{
+        transform: rotate(90deg);
+        border-radius: 100%;
+    }
