@@ -11,8 +11,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <img id="bed" src="/Sleeping Cat/images/bed.png" alt="bed">
-        <img id="cat" src="/Sleeping Cat/images/sleeping cat.png" alt="cat">
+        <img id="bed" src="/images/bed.png" alt="bed">
+        <img id="cat" src="/images/sleeping-cat.png" alt="cat">
     </div>
     <button  id="button" onclick="toogleCat()">Sleep</button>
         <script>
@@ -21,11 +21,11 @@
                 const cat=document.getElementById("cat")
                 const button=document.getElementById("button")
                 if(isSLeeping){
-                    cat.src="/Sleeping Cat/images/sleeping cat.png";
+                    cat.src="/images/sleeping-cat.png";
                     button.innerText="Sleep";
                 }
                 else{
-                    cat.src="/Sleeping Cat/images/cat sleeping.png";
+                    cat.src="/images/cat-sleeping.png";
                     button.innerText="Awaken";
                 }
                 isSLeeping= !isSLeeping;
