@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <img id="bed" src="/Sleeping Cat/images/bed.png" alt="bed">
+        <img id="cat" src="/Sleeping Cat/images/sleeping cat.png" alt="cat">
+    </div>
+    <button  id="button" onclick="toogleCat()">Sleep</button>
+        <script>
+            let isSLeeping=false;
+            function toogleCat(){
+                const cat=document.getElementById("cat")
+                const button=document.getElementById("button")
+                if(isSLeeping){
+                    cat.src="/Sleeping Cat/images/sleeping cat.png";
+                    button.innerText="Sleep";
+                }
+                else{
+                    cat.src="/Sleeping Cat/images/cat sleeping.png";
+                    button.innerText="Awaken";
+                }
+                isSLeeping= !isSLeeping;
+            }
+        </script>
+</body>
+</html>
