@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="text1">html-ში აიღეთ ერთი პარაგრაფი, მას გაუწერეთ ტექსტი და id. <br>js-ში წამოიღეთ ეს ელემენტი Id-ის გამოყენებით და ცვლადში შეინახეთ მისი textcontent.<br> საბოლოოდ alert box-ში გამოიტანეთ ცვლადის მნიშვნელობა</p>
+    <p id="text2" style="background-color: black;color: lawngreen; font-weight: 700;font-size: large;width: fit-content;">I Like Apples</p>
+    <script>
+        let text1=document.getElementById("text1").innerHTML;
+    alert(text1);
+    let text2=document.getElementById("text2");
+    let stylesOfText2={
+        backgroundColor:text2.style.backgroundColor,
+        color:text2.style.color,
+        fontWeight:text2.style.fontWeight,
+        fontSize:text2.style.fontSize,
+};
+console.log(stylesOfText2);
+    </script>
+</body>
+</html>
