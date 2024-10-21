@@ -29,12 +29,14 @@
     .card{
       background-color: white;
       width: 50%;
+      height:fit-content;
       padding: 40px;
+      border-radius: 15px;
     }
     form{
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 15px;
     }
     .first-last-name{
       display: flex;
@@ -52,6 +54,63 @@
     .agreement{
       display: flex;
     }
+    form p{
+      display: ;
+      color: hsl(0, 66%, 54%)
+    }
+    .card input{
+      padding: 10px;
+      border-radius: 7px;
+      background-color: white;
+    }
+    .first-last-name .input-group{
+      width: 100%;
+    }
+    #first-name{
+      margin-right: 5px;
+    }
+    #last-name{
+      margin-left: 5px;
+    }
+    .input-group .query{
+      width: 100%;
+      border: 2px solid black;
+      padding: 10px;
+    }
+    #query1{
+      margin-right: 5px;
+    }
+    #query2{
+      margin-left: 5px;
+    }
+    .query input{
+      margin-left:5px ;
+      margin-right: 3px;
+    }
+    .query{
+      border-radius: 7px;
+    }
+    #message{
+      padding: 30px;
+    }
+    #agreement{
+      margin-right: 7.5px;
+    }
+    .submit{
+      padding: 13px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 7px;
+    }
+    h1{
+      padding-bottom: 25px;
+    }
+    label{
+      margin-bottom: 5px;
+    }
+    sp{
+      color:hsl(169, 82%, 27%) ;
+    }
   </style>
 </head>
 <body>
@@ -60,51 +119,53 @@
   <h1>Contact Us</h1>
   <form>
     <div class="first-last-name">
-    <div class="input-group">
+    <div class="input-group" id="first-name">
   <label for="firstname">First Name <sp>&nbsp;*</sp></label>
   <input type="text" name=firstname" id="firstname" required>
-  <span>This field is required</span>
+  <p class="firstname-error">This field is required<p>
   </div>
-  <div class="input-group">
+  <div class="input-group" id="last-name">
   <label for="lastname">Last Name <sp>&nbsp;*</sp></label>
   <input type="text" name="lastname" id="lastname" required>
-  <span>This field is required</span>
+  <p class="lastname-error">This field is required<p>
   </div>
  </div>
   <div class="input-group">
   <label for="email">Email Address <sp>&nbsp;*</sp></label>
   <input type="email" name="email" id="email" placeholder="email@example.com" required>
-  <span>Please enter a valid email address</span>
-  <span>This field is required</span>
+  <div class="email-errors">
+  <p class="email-error-required" style="position: absolute";>This field is required<p>
+  <p class="email-error-valid">Please enter a valid email address</p>
+  </div>
   </div>
   <div class="input-group">
   <label for="query-type">Query Type <sp>&nbsp;*</sp></label>
     <div class="query-wrapper">
-    <div class="query">
+    <div class="query" id="query1">
     <input type="radio" name="options" value="option1" required>
-    <p>General Enquiry</p> 
+    <p style="display:contents;color: black;">General Enquiry</p> 
     </div>
-    <div class="query">
+    <div class="query" id="query2">
     <input type="radio" name="options" value="option2">
-    <p>Support Request</p>
+    <p style="display:contents;color: black;">Support Request</p>
     </div>
   </div>
-  <span>Please select a query type</span>
+  <p class="query-error">Please select a query type</p>
   </div>
   <div class="input-group">
   <label for="message">Message <sp>&nbsp;*</sp></label>
   <input type="text" name="message" id="message" required>
-  <span>This field is required</span>
+  <p class="msg-error">This field is required</p>
   </div>
   <div class="input-group">
   <label for="agreement"></label>
   <div class="agreement">
   <input type="checkbox" name="agreement" id="agreement" required>
-  <p>I consent to being contacted by the team <sp>&nbsp;*</sp></p>
+  <p style="display:contents;color: black;">I consent to being contacted by the team <sp>&nbsp;*</sp></p>
   </div>
-  <span>To submit this form, please consent to being contacted</span>
+  <p class="agreement-error">To submit this form, please consent to being contacted<p>
   </div>
-  <button type="submit" class="sumbit">Submit</button>
+  <button type="submit" class="submit">Submit</button>
   
   </form>
 </div>
