@@ -55,13 +55,18 @@
       display: flex;
     }
     form p{
-      display: ;
+      display: none;
       color: hsl(0, 66%, 54%)
     }
     .card input{
       padding: 10px;
       border-radius: 7px;
       background-color: white;
+      border: 2px solid hsl(186, 15%, 59%);
+    }
+    .card input:focus {
+      border-color: hsl(169, 82%, 27%); 
+      outline: none; 
     }
     .first-last-name .input-group{
       width: 100%;
@@ -74,7 +79,7 @@
     }
     .input-group .query{
       width: 100%;
-      border: 2px solid black;
+      border: 2px solid hsl(186, 15%, 59%);
       padding: 10px;
     }
     #query1{
@@ -84,8 +89,12 @@
       margin-left: 5px;
     }
     .query input{
-      margin-left:5px ;
-      margin-right: 3px;
+      margin-left:10px ;
+      margin-right: 10px;
+      width: 20px; 
+      height: 20px; 
+      cursor: pointer;
+      accent-color: hsl(169, 82%, 27%);
     }
     .query{
       border-radius: 7px;
@@ -94,6 +103,7 @@
       padding: 30px;
     }
     #agreement{
+      cursor: pointer;
       margin-right: 7.5px;
     }
     .submit{
@@ -101,6 +111,14 @@
       margin-top: 10px;
       border: none;
       border-radius: 7px;
+      background-color: hsl(169, 82%, 27%);
+      color: white;
+      font-size: large;
+      cursor: pointer;
+      transition:background-color 0.3s ease;
+    }
+    .submit:hover{
+      background-color: hsl(169, 82%, 37%);
     }
     h1{
       padding-bottom: 25px;
@@ -111,13 +129,17 @@
     sp{
       color:hsl(169, 82%, 27%) ;
     }
+    #agreement{
+      background-color: hsl(169, 82%, 27%);
+      accent-color: white;
+    }
   </style>
 </head>
 <body>
   <div class="background">
     <div class="card">
   <h1>Contact Us</h1>
-  <form>
+  <form method="post" name="form" onsubmit="return validated()">
     <div class="first-last-name">
     <div class="input-group" id="first-name">
   <label for="firstname">First Name <sp>&nbsp;*</sp></label>
@@ -134,19 +156,19 @@
   <label for="email">Email Address <sp>&nbsp;*</sp></label>
   <input type="email" name="email" id="email" placeholder="email@example.com" required>
   <div class="email-errors">
-  <p class="email-error-required" style="position: absolute";>This field is required<p>
-  <p class="email-error-valid">Please enter a valid email address</p>
+  <p id="email-error-required" style="position: absolute";>This field is required<p>
+  <p id="email-error-valid">Please enter a valid email address</p>
   </div>
   </div>
   <div class="input-group">
   <label for="query-type">Query Type <sp>&nbsp;*</sp></label>
     <div class="query-wrapper">
     <div class="query" id="query1">
-    <input type="radio" name="options" value="option1" required>
+    <input type="radio" name="options" value="option1" id="opt1" required>
     <p style="display:contents;color: black;">General Enquiry</p> 
     </div>
     <div class="query" id="query2">
-    <input type="radio" name="options" value="option2">
+    <input type="radio" name="options" value="option2" id="opt2">
     <p style="display:contents;color: black;">Support Request</p>
     </div>
   </div>
@@ -166,7 +188,28 @@
   <p class="agreement-error">To submit this form, please consent to being contacted<p>
   </div>
   <button type="submit" class="submit">Submit</button>
-  
+  <script>
+    const opt1 = document.getElementById("opt1");
+    const opt2 = document.getElementById("opt2");
+    const query1 = document.getElementById("query1");
+    const query2 = document.getElementById("query2");
+
+    function updateQueryStyles() {
+        query1.style.backgroundColor = ""; 
+        query2.style.backgroundColor = ""; 
+        query1.style.border="";
+        query2.style.border="";
+        if (opt1.checked) {
+            query1.style.backgroundColor = "rgba(17, 172, 143, 0.3)";
+            query1.style.border="2px solid hsl(169, 82%, 37%)"
+        } else if (opt2.checked) {
+            query2.style.border="2px solid hsl(169, 82%, 37%)"
+            query2.style.backgroundColor = "rgba(17, 172, 143, 0.3)";
+        }
+    }
+    opt1.addEventListener("change", updateQueryStyles);
+    opt2.addEventListener("change", updateQueryStyles);    
+  </script>
   </form>
 </div>
   
