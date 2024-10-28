@@ -1,0 +1,14 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color:rgb(37, 37, 37);
+    color: lawngreen;
+}
+div{
+    background-color: whitesmoke;
+    color: black;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+}

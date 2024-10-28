@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <pre>
+    1. **Greeting Function**  
+    Create a function `greet` that accepts a name as a parameter and greets the person. If no name is provided, the default name should be "Guest".
+    <div>
+        <h1 id="greeting">Hello Guest</h1>
+        Name:
+        <input id="login-name"></input>
+        
+        <button id="log">Log In</button>
+    </div>
+
+    2. **Addition with Default Parameters**  
+    Write a function `add_numbers` that takes two numbers and returns their sum. The second number should have a default value of 0.
+
+    <div>
+        <h1>Add Numbers</h1>
+        Number 1:                          Number 2:
+        <input id="num1"> + <input id="num2" placeholder="0">
+        
+        <button id="add-numbers">Add</button>
+
+        <h1 id="added-number"></h1>
+    </div>
+
+    3. **Rectangle Area Calculator**  
+    Create a function `calculate_area` to find the area of a rectangle. It should take two parameters: length and width. If the width is not provided, use a default value of 1.
+    <div>
+        <label>Area Of Rectangle</label>
+            
+        Input Length                          
+        <input id="length">
+        Input Width
+        <input id="width">
+            
+        <button id="area">Calculate Area</button><h1 id="result-area"></h1>
+    </div>
+    4. **Temperature Conversion**  
+    Write a function `convert_temperature` to convert temperatures between Celsius and Fahrenheit. It should have two parameters: temperature and scale (either "C" for Celsius or "F" for Fahrenheit), with "C" as the default scale.
+    <div>
+        <label>Temperature Converter</label>
+        <button id="toggle-scale">Toggle Scale</button>
+        <h1 style="margin: 0px;" id="toggle-display1"></h1>
+        <p id="toggle-display2"></p>
+        <input id="input-temp" placeholder="0">
+        <button id="convert">Convert</button>
+        <h1 id="result-temp"></h1>
+    </div>
+    </pre>
+<script src="script.js"></script>
+</body>
+</html>
