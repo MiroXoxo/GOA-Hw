@@ -40,6 +40,3 @@ document.getElementById("submit-score").onclick=function(){
     document.getElementById("pass-fail").textContent=passFail;
     document.getElementById("pass-fail").style.color=color;
 }
-// 13. **Sum of Numbers**  
-// Write a function `sum_of_numbers` that accepts a list of numbers and returns their sum using a for loop.
- 
